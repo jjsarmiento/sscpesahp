@@ -1,0 +1,11 @@
+{
+    "project_path": "C:\Users\Bryan\Documents\GitHub\Phase-P-CSS\sscpesahp\build",
+	"output_path": "C:\Users\Bryan\Documents\GitHub\Phase-P-CSS\sscpesahp\build",
+	"options": {
+		"cache":         true,
+		"debug":         true,
+		"line-comments": true,
+		"line-numbers":  true,
+		"style":         "nested"
+	}
+}
