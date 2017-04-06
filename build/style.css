@@ -61,6 +61,17 @@ h2, h3 {
 .btn-success:active {
   background-color: #2ECC71; }
 
+.blue {
+  background-color: #0066ff !important;
+  color: #FFFFFF; }
+
+.orange {
+  background-color: #FF8419;
+  color: #FFFFFF; }
+
+.height-200 {
+  height: 200px; }
+
 .no-padding {
   padding: 0; }
 
