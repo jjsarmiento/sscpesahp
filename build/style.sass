@@ -1,0 +1,238 @@
+
+// FONTS -- START
+$font_master	: Trebuchet Ms
+// FONTS -- END
+
+// COLORS -- START
+$cloud			: #ECF0F1
+$black			: #333333
+$orange			: #FF8419
+// COLORS -- END
+
+// NUMERICAL VALUES -- START
+$default_size	: 1em
+// SCREEN SIZES -- START
+$screenMobile	: 320px  // smartphones, iPhone, portrait 480x320 phones
+$screenTabletS	: 481px  // portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
+$screenTabletM	: 641px  // portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+$screenTabletL	: 961px	 // tablet, landscape iPad, lo-res laptops ands desktops
+$screenDesktopM	: 1025px // big landscape tablets, laptops, and desktops
+$screenDesktopL : 1281px // hi-res laptops and desktops
+// SCREEN SIZES -- END
+// NUMERICAL VALUE -- START
+
+// GLOBAL SELECTOR -- START
+*, *:before, *:after 
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+// GLOBAL SELECTOR -- END
+
+// CLEARFIX -- START
+.group:before, .group:after
+	content: ""
+	display: table
+.group:after
+	clear: both
+.group 
+	zoom: 1 /* For IE 6/7 (trigger hasLayout) */
+// CLEARFIX -- END
+
+// TAG SELECTOR -- START
+body 
+	font-family : $font_master
+	margin : 0
+h1
+	letter-spacing : 2px
+h2, h3
+	letter-spacing : 1px
+// TAG SELECTOR -- END
+
+// CLASS SELECTOR -- START
+.caps-up
+	text-transform : uppercase
+.caps-low
+	text-transform : lowercase
+.container
+	margin-left: 18%
+	margin-right : 18%
+
+// Button Styles -- START
+.btn 
+	padding : 1em
+	padding-left : 1.5em
+	padding-right : 1.5em
+	border-radius : 0.2em
+	box-shadow: none
+	border : none
+	cursor : pointer
+	border : 1px solid #BDC3C6
+.btn:focus
+	outline : none
+	
+.btn-default
+	background-color : white
+	border : 1px solid #95A5A6
+.btn-default:active
+	background-color : #ECF0F1
+
+.btn-success
+	color : white
+	background-color : #27AE60
+.btn-success:active
+	background-color : #2ECC71
+// Button Styles -- END
+
+// Padding Properties -- START
+.no-padding 
+	padding : 0
+.padded
+	padding : $default_size
+.padding-top
+	padding-top : $default_size
+.padding-bottom
+	padding-bottom : $default_size
+.padding-left
+	padding-left : $default_size
+.padding-right
+	padding-right : $default_size
+// Padding Properties -- END
+
+// Margins Properties -- START
+.no-margin
+	margin : 0
+.margined
+	margin : $default_size
+.margin-top
+	margin-top : $default_size
+// Margins Properties -- END
+
+.text-center
+	text-align : center
+.text-justify
+	text-align : justify
+.text-left
+	text-align : left
+.text-right
+	text-align : right
+
+.text-bold
+	font-weight : 600
+
+// Grid System -- START
+//
+//	Some testing variables are put in for show and testing.
+//	remove these test variables for live usage
+//	- Jan
+.row
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+.row:before, .row:after
+	display : table
+	content : " "
+.row:after
+	clear : both
+[class*="col-"]
+	margin : 0
+	padding : 0
+	float: left
+	position : relative
+.col-1
+	width: 8.33%
+.col-2
+	width: 16.66%
+.col-3
+	width: 25%
+.col-4
+	width: 33.33%
+.col-5
+	width: 41.66%
+.col-6
+	width: 50%
+.col-7
+	width: 58.33%
+.col-8
+	width: 66.66%
+.col-9
+	width: 75%
+.col-10
+	width: 83.33%
+.col-11
+	width: 91.66%
+.col-12
+	width: 100%
+
+.col-offset-1
+	margin-left: 8.33%
+.col-offset-2
+	margin-left: 16.66%
+.col-offset-3
+	margin-left: 25%
+.col-offset-4
+	margin-left: 33.33%
+.col-offset-5
+	margin-left: 41.66%
+.col-offset-6
+	margin-left: 50%
+.col-offset-7
+	margin-left: 58.33%
+.col-offset-8
+	margin-left: 66.66%
+.col-offset-9
+	margin-left: 75%
+.col-offset-10
+	margin-left: 83.33%
+.col-offset-11
+	margin-left: 91.66%
+.col-offset-12
+	margin-left: 100%
+
+// Grid System : Media Queries -- START
+@media (max-width: $screenDesktopL)
+	.col-1
+		width: 16.66%
+	
+@media (max-width: $screenDesktopM)
+	body
+		color : green
+	.col-5
+		width: 41.66%
+	.col-6, .col-3, .col-2
+		width: 50%
+@media (max-width: $screenTabletL)
+@media (max-width: $screenTabletM)
+	body
+		color : orange
+	[class*="col-offset-"]
+		margin : 0
+	.col-3, .col-1,
+		width: 25%
+	.col-2
+		width: 50%
+	.col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+		width: 100%
+@media (max-width: $screenTabletS)
+@media (max-width: $screenMobile)
+	body
+		color : red
+	.col-3, .col-1, .col-4, .col-6
+		width: 50%
+	.col-7
+		width: 58.33%
+	.col-8
+		width: 66.66%
+	.col-9
+		width: 75%
+	.col-10
+		width: 83.33%
+	.col-11
+		width: 91.66%
+	.col-12 , .col-2, .col-3
+		width: 100%
+// Grid System : Media Queries -- END
+
+// Grid System -- END
+
+// CLASS SELECTOR -- END
+
