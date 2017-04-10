@@ -13,6 +13,7 @@ $white          : #FFFFFF
 
 // NUMERICAL VALUES -- START
 $default_size	: 1em
+$borderRadiusDefault : 0.3em
 // SCREEN SIZES -- START
 $screenMobile	: 320px  // smartphones, iPhone, portrait 480x320 phones
 $screenTabletS	: 481px  // portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
@@ -104,9 +105,15 @@ h2, h3
 	text-align : right
 .text-bold
 	font-weight : 600
+.truncate
+	width: 250px
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
 // CLASS SELECTOR -- END
 
 // IMPORT EXTERNAL SASS FILES -- START
-@import buttons
-@import grid
+@import imports/buttons
+@import imports/grid
+@import imports/tabs
 // IMPORT EXTERNAL SASS FILES -- END

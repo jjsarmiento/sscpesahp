@@ -1,0 +1,26 @@
+ul.tab
+	margin : 0
+	padding : 0 
+	list-style-type: none
+.tab > .tab-item
+	position : relative
+	text-align : center
+	background-color : #BDC3C7
+	padding : auto
+	border-right : 1px solid white
+	min-width : calc(100% / 10)
+	padding : 0.4em 0.8em 0.4em 0.8em 
+	border-top-left-radius : $borderRadiusDefault
+	border-top-right-radius : $borderRadiusDefault
+	cursor : pointer
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+	display: inline
+.tab > .tab-item:last-child
+	margin-right : 0
+.tab-item.active
+	background-color : #333333
+	color : white
+.tab-item
+	background-color : #333333
