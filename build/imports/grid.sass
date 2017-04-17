@@ -3,6 +3,16 @@
 //	Some testing variables are put in for show and testing.
 //	remove these test variables for live usage
 //	- Jan
+
+// SCREEN SIZES -- START
+$screenMobile	: 320px  // smartphones, iPhone, portrait 480x320 phones
+$screenTabletS	: 481px  // portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
+$screenTabletM	: 641px  // portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+$screenTabletL	: 961px	 // tablet, landscape iPad, lo-res laptops ands desktops
+$screenDesktopM	: 1025px // big landscape tablets, laptops, and desktops
+$screenDesktopL : 1281px // hi-res laptops and desktops
+// SCREEN SIZES -- END
+
 .row
 	box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -17,6 +27,7 @@
 	padding : 0
 	float: left
 	position : relative
+	word-wrap: break-word
 .col-1
 	width: 8.33%
 .col-2
@@ -73,8 +84,6 @@
 		width: 8.33%
 	
 @media (max-width: $screenDesktopM)
-	p, h1, h2, h3, h4, h5, h6
-		color : green
 	.col-5
 		width: 41.66%
 	.col-6
@@ -83,8 +92,6 @@
 		width: 8.33%
 @media (max-width: $screenTabletL)
 @media (max-width: $screenTabletM)
-	p, h1, h2, h3, h4, h5, h6
-		color : orange
 	[class*="col-offset-"]
 		margin : 0
 	.col-3
@@ -95,8 +102,6 @@
 		width: 100%
 @media (max-width: $screenTabletS)
 @media (max-width: $screenMobile)
-	p, h1, h2, h3, h4, h5, h6
-		color : red
 	.container
 		margin-right: 0
 		margin-left: 0

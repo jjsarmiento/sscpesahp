@@ -1,6 +1,8 @@
+// Import reset.sass for reset properties
+@import imports/reset
 
 // FONTS -- START
-$font_master	: Trebuchet Ms
+$font_master	: Meiryo
 // FONTS -- END
 
 // COLORS -- START
@@ -9,19 +11,12 @@ $black			: #333333
 $orange			: #FF8419
 $blue           : #0066ff
 $white          : #FFFFFF
+$grey 			: #7F8C8D
 // COLORS -- END
 
 // NUMERICAL VALUES -- START
 $default_size	: 1em
 $borderRadiusDefault : 0.3em
-// SCREEN SIZES -- START
-$screenMobile	: 320px  // smartphones, iPhone, portrait 480x320 phones
-$screenTabletS	: 481px  // portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
-$screenTabletM	: 641px  // portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
-$screenTabletL	: 961px	 // tablet, landscape iPad, lo-res laptops ands desktops
-$screenDesktopM	: 1025px // big landscape tablets, laptops, and desktops
-$screenDesktopL : 1281px // hi-res laptops and desktops
-// SCREEN SIZES -- END
 // NUMERICAL VALUE -- START
 
 // GLOBAL SELECTOR -- START
@@ -41,16 +36,6 @@ $screenDesktopL : 1281px // hi-res laptops and desktops
 	zoom: 1 /* For IE 6/7 (trigger hasLayout) */
 // CLEARFIX -- END
 
-// TAG SELECTOR -- START
-body 
-	font-family : $font_master
-	margin : 0
-h1
-	letter-spacing : 2px
-h2, h3
-	letter-spacing : 1px
-// TAG SELECTOR -- END
-
 // CLASS SELECTOR -- START
 .caps-up
 	text-transform : uppercase
@@ -61,12 +46,14 @@ h2, h3
 	margin-right : 18%
 
 // Background Colors -- START
-.blue 
+.bg-blue 
 	background-color: $blue !important
 	color: $white
-.orange
+.bg-orange
 	background-color: $orange
 	color: $white
+.bg-white
+	background-color: white
 .height-200
 	height: 200px
 // Background Colors -- END
@@ -93,6 +80,20 @@ h2, h3
 	margin : $default_size
 .margin-top
 	margin-top : $default_size
+.margin-top-2
+	margin-top : 2em
+.margin-top-4
+	margin-top : 4em
+.margin-top-5
+	margin-top : 5em
+.margin-bottom
+	margin-bottom : $default_size
+.margin-bottom-2
+	margin-bottom : 2em
+.margin-bottom-4
+	margin-bottom : 4em
+.margin-bottom-5
+	margin-bottom : 5em
 // Margins Properties -- END
 
 .text-center
@@ -113,6 +114,7 @@ h2, h3
 // CLASS SELECTOR -- END
 
 // IMPORT EXTERNAL SASS FILES -- START
+@import imports/tags
 @import imports/buttons
 @import imports/grid
 @import imports/tabs

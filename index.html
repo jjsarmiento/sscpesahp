@@ -22,7 +22,14 @@
 		body {
 			background-color: #333333;
 		}
+
+		.bg-white{
+
+			background-color: white !important;
+		}
 	</style>
+	<script type="text/javascript" src="build/scripts/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="build/scripts/scripts.js"></script>
 </head>
 <body>
 	<section class="container">
@@ -35,12 +42,38 @@
 	</section>
 
 	<section class="container">
-		<h1 class="caps-up text-center">buttons</h1>
-		<button class="btn btn-default">Default</button>
-		<button class="btn btn-success">Success</button>
-		<button class="btn">Primary</button>
-		<button class="btn">Danger</button>
-		<button class="btn">Warning</button>
+		<div class="row">
+			<div class="col-6 bg-white">
+				<h1 class="caps-up text-center">Button tags</h1>
+				<button class="btn btn-default">Default</button>
+				<button class="btn btn-success">Success</button>
+				<button class="btn btn-primary">Primary</button>
+				<button class="btn btn-danger">Danger</button>
+				<button class="btn btn-warning">Warning</button>
+
+				<h1 class="caps-up text-center">.btn-block</h1>
+				<button class="btn btn-default btn-block">Default</button>
+				<button class="btn btn-success btn-block">Success</button>
+				<button class="btn btn-primary btn-block">Primary</button>
+				<button class="btn btn-danger btn-block">Danger</button>
+				<button class="btn btn-warning btn-block">Warning</button>
+			</div>
+			<div class="col-6 bg-white">
+				<h1 class="caps-up text-center">Anchor tags</h1>
+				<a href="#" class="btn btn-default">Default</a>
+				<a href="#" class="btn btn-success">Success</a>
+				<a href="#" class="btn btn-primary">Primary</a>
+				<a href="#" class="btn btn-danger">Danger</a>
+				<a href="#" class="btn btn-warning">Warning</a>
+
+				<h1 class="caps-up text-center">.btn-block</h1>
+				<a href="#" class="btn btn-default btn-block">Default</a>
+				<a href="#" class="btn btn-success btn-block">Success</a>
+				<a href="#" class="btn btn-primary btn-block">Primary</a>
+				<a href="#" class="btn btn-danger btn-block">Danger</a>
+				<a href="#" class="btn btn-warning btn-block">Warning</a>
+			</div>
+		</div>
 	</section>
 
 	<section class="container">
@@ -200,10 +233,10 @@
 	<section class="container group">
 		<h1 class="text-center">Tabs and Pills</h1>
 		<ul class="tab group">
-			<li class="tab-item active" data-content="#sample">SAMPLE ONLY</li>
+			<li class="tab-item" data-content="#sample">SAMPLE ONLY</li>
 			<li class="tab-item" data-content="#sample">SAMPLE</li>
 			<li class="tab-item" data-content="#sample">SAMPLE</li>
-			<li class="tab-item" data-content="#sample">SAMPLE</li>
+			<li class="tab-item active" data-content="#sample">SAMPLE</li>
 			<li class="tab-item" data-content="#sample">SAMPLE</li>
 			<li class="tab-item" data-content="#sample">SAMPLE</li>
 			<li class="tab-item" data-content="#sample">SAMPLE</li>
@@ -211,6 +244,18 @@
 			<li class="tab-item" data-content="#sample">SAMPLE</li>
 			<li class="tab-item" data-content="#sample">SAMPLE</li>
 		</ul>
+		<div class="tab-content active">
+			FUUUUUUUUUUUUUUUUUUUUUUUUUUUCK
+		</div>
+		<div class="tab-content"></div>
+		<div class="tab-content"></div>
+		<div class="tab-content"></div>
+		<div class="tab-content"></div>
+		<div class="tab-content"></div>
+		<div class="tab-content"></div>
+		<div class="tab-content"></div>
+		<div class="tab-content"></div>
+		<div class="tab-content"></div>
 	</section>
 </body>
 </html>

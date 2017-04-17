@@ -2,25 +2,36 @@ ul.tab
 	margin : 0
 	padding : 0 
 	list-style-type: none
+	color : white
 .tab > .tab-item
-	position : relative
 	text-align : center
-	background-color : #BDC3C7
-	padding : auto
+	background-color : #8faadc
 	border-right : 1px solid white
-	min-width : calc(100% / 10)
-	padding : 0.4em 0.8em 0.4em 0.8em 
+	width : calc(100% / 10)
+	padding : 0.8em 0 0.8em 0 
 	border-top-left-radius : $borderRadiusDefault
 	border-top-right-radius : $borderRadiusDefault
 	cursor : pointer
 	white-space: nowrap
 	overflow: hidden
 	text-overflow: ellipsis
-	display: inline
+	transition : 0.2s
+	// Use below code if tab buttons must have dynamic width
+	float: left
+	// default width system
+	//display: inline
 .tab > .tab-item:last-child
 	margin-right : 0
+.tab > .tab-item:hover
+	background-color : #bdd7ee
 .tab-item.active
-	background-color : #333333
-	color : white
+	background-color : #bdd7ee
+	color : black
 .tab-item
 	background-color : #333333
+.tab-content
+	display: none
+	padding: 0.8em
+	background-color: #bdd7ee
+.tab-content.active
+	display: block

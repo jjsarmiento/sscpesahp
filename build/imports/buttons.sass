@@ -1,26 +1,122 @@
+// Color1 = Deeper color. Used as default color
+// Color2 = Lighter color. Used for active event
+// ColorDisabled = Lightest shade of color, used (as bg) for disabled attribute
+$btnDefaultColor1 : white
+$btnDefaultColor2 : #ECF0F1
+$btnDefaultColorDisabled : white
+
+$btnSuccessColor1 : #27AE60
+$btnSuccessColor2 : #2ECC71
+$btnSuccessColorDisabled : #A5D6A7
+
+$btnPrimaryColor1 : #2980B9
+$btnPrimaryColor2 : #3498DB
+$btnPrimaryColorDisabled : #90CAF9
+
+$btnWarningColor1 : $orange
+$btnWarningColor2 : #E67E22
+$btnWarningColorDisabled : #E65100
+
+$btnDangerColor1 : #C0392B
+$btnDangerColor2 : #E74C3C
+$btnDangerColorDisabled : #EF9A9A
+
 // Button Styles -- START
-.btn 
-	padding : 1em
-	padding-left : 1.5em
-	padding-right : 1.5em
+.btn, a.btn
+	font-family : $font_master
+	padding : 0.8em
+	padding-left : 1.3em
+	padding-right : 1.3em
 	border-radius : 0.2em
 	box-shadow: none
 	border : none
 	cursor : pointer
 	border : 1px solid #BDC3C6
-	margin-bottom: 10px
+	margin-bottom: 0.4em
+a.btn
+	font-size : 0.8em
+	text-decoration : none
+	display: inline-block
+	color : $black
 .btn:focus
 	outline : none
-	
-.btn-default
-	background-color : white
-	border : 1px solid #95A5A6
-.btn-default:active
-	background-color : #ECF0F1
 
-.btn-success
+button.disabled, a.disabled,
+button.btn:disabled, a.btn:disabled
+	cursor : not-allowed
+
+a.btn-block
+	display : block
+button.btn-block
+	width : 100%
+	
+// btn-default - START
+button.btn-default, a.btn-default
+	background-color : $btnDefaultColor1
+	border : 1px solid #95A5A6
+button.btn-default:active, a.btn-default:active
+	background-color : $btnDefaultColor2
+button.btn-default.disabled, a.btn-default.disabled,
+button.btn-default.disabled:active, a.btn-default.disabled:active,
+button.btn-default:disabled, a.btn-default:disabled
+	background-color : $btnDefaultColorDisabled
+	color : $grey
+// btn-default - END
+
+// btn-success - START
+button.btn-success, a.btn-success
 	color : white
-	background-color : #27AE60
-.btn-success:active
-	background-color : #2ECC71
+	background-color : $btnSuccessColor1
+	border : 1px solid $btnSuccessColor1
+button.btn-success:active, a.btn-success:active
+	background-color : $btnSuccessColor2
+button.btn-success.disabled, a.btn-success.disabled,
+button.btn-success.disabled:active, a.btn-success.disabled:active,
+button.btn-success:disabled, a.btn-success:disabled
+	background-color : $btnSuccessColorDisabled
+	border-color : $btnSuccessColorDisabled
+// btn-success - END
+
+// btn-primary - START
+button.btn-primary, a.btn-primary
+	color : white
+	background-color : $btnPrimaryColor1
+	border : 1px solid $btnPrimaryColor1
+button.btn-primary:active, a.btn-primary:active
+	background-color : $btnPrimaryColor2
+button.btn-primary.disabled, a.btn-primary.disabled,
+button.btn-primary.disabled:active, a.btn-primary.disabled:active,
+button.btn-primary:disabled, a.btn-primary:disabled
+	background-color : $btnPrimaryColorDisabled
+	border-color : $btnPrimaryColorDisabled
+// btn-primary - END
+
+// btn-warning - START
+button.btn-warning, a.btn-warning
+	color : white
+	background-color : $btnWarningColor1
+	border : 1px solid $btnWarningColor1
+button.btn-warning:active, a.btn-warning:active
+	background-color : $btnWarningColor2
+button.btn-warning.disabled, a.btn-warning.disabled,
+button.btn-warning.disabled:active, a.btn-warning.disabled:active,
+button.btn-warning:disabled, a.btn-warning:disabled
+	background-color : $btnWarningColorDisabled
+	border-color : $btnWarningColorDisabled
+// btn-warning - END
+
+// btn-danger - START
+button.btn-danger, a.btn-danger
+	color : white
+	background-color : $btnDangerColor1
+	border : 1px solid $btnDangerColor1
+button.btn-danger:active, a.btn-danger:active
+	background-color : $btnDangerColor2
+button.btn-danger.disabled, a.btn-danger.disabled,
+button.btn-danger.disabled:active, a.btn-danger.disabled:active,
+button.btn-danger:disabled, a.btn-danger:disabled
+	background-color : $btnDangerColorDisabled
+	border-color : $btnDangerColorDisabled
+// btn-danger - END
+
 // Button Styles -- END
