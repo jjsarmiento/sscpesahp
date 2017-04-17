@@ -4,16 +4,15 @@
 //	remove these test variables for live usage
 //	- Jan
 
-.row
-	box-sizing: border-box
-	-moz-box-sizing: border-box
-	-webkit-box-sizing: border-box
 .row:before, .row:after
 	display : table
 	content : " "
 .row:after
 	clear : both
 [class*="col-"]
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
 	margin : 0
 	padding : 0
 	float: left

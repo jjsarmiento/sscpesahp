@@ -1,0 +1,84 @@
+// Dialog SASS Files by Jan Sarmiento
+$colorInfo1 : #BBDEFB
+$colorInfo2 : #90CAF9
+$colorDanger1 : #FFCDD2
+$colorDanger2 : #EF9A9A
+$colorWarning1 : #FFE0B2
+$colorWarning2 : #FFCC80
+$colorSuccess1 : #C8E6C9
+$colorSuccess2 : #A5D6A7
+$colorCloseBtn : $grey
+
+div.alert
+	padding : 0.5em
+	border-radius : $borderRadiusDefault
+	margin : 1em 0 1em 0
+.alert > span.alert-header
+	font-size : 0.8em
+	font-weight : 600
+	display : block
+	margin-bottom : 0.5em
+
+// alert-info -- Start
+div.alert.alert-info
+	background-color : $colorInfo1
+	border : 1px solid $colorInfo2
+div.alert.alert-info > span.close
+	color : $colorCloseBtn
+	float : right
+	opacity : 0.8
+	cursor : pointer
+div.alert.alert-info > span.alert-header
+	color : #0D47A1
+div.alert.alert-info > span.alert-message
+	text-align : justify
+	font-size : 0.9em
+// alert-info -- End
+
+// alert-danger -- Start
+div.alert.alert-danger
+	background-color : $colorDanger1
+	border : 1px solid $colorDanger2
+div.alert.alert-danger > span.close
+	color : $colorCloseBtn
+	float : right
+	opacity : 0.8
+	cursor : pointer
+div.alert.alert-danger > span.alert-header
+	color : #D32F2F
+div.alert.alert-danger > span.alert-message
+	text-align : justify
+	font-size : 0.9em
+// alert-danger -- End
+
+// alert-warning -- Start
+div.alert.alert-warning
+	background-color : $colorWarning1
+	border : 1px solid $colorWarning2
+div.alert.alert-warning > span.close
+	color : $colorCloseBtn
+	float : right
+	opacity : 0.8
+	cursor : pointer
+div.alert.alert-warning > span.alert-header
+	color : #F57C00
+div.alert.alert-warning > span.alert-message
+	text-align : justify
+	font-size : 0.9em
+// alert-warning -- End
+
+// alert-success -- Start
+div.alert.alert-success
+	background-color : $colorSuccess1
+	border : 1px solid $colorSuccess2
+div.alert.alert-success > span.close
+	color : $colorCloseBtn
+	float : right
+	opacity : 0.8
+	cursor : pointer
+div.alert.alert-success > span.alert-header
+	color : #2E7D32
+div.alert.alert-success > span.alert-message
+	text-align : justify
+	font-size : 0.9em
+// alert-success -- End

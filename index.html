@@ -4,13 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Phase 1 Philippines</title>
 	<link rel="stylesheet" href="build/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-		[class*="col-"]{
-			text-align: center;
-			padding: 0.4em;
+		div[class*="col-"]{
+			padding: 0.8em;
 			border : 1px solid white;
 			background-color: #FF8419;
-			border-radius: 0.4em;
+			border-radius: 0.2em;
 		}
 
 		section {
@@ -33,15 +33,64 @@
 </head>
 <body>
 	<section class="container">
-		<h1>This is H1 Tag</h1>
-		<h2>This is H2 Tag</h2>
-		<h3>This is H3 Tag</h3>
-		<p>This is a paragraph</p>
-		<div class="text-center">This word is in <span class="text-bold">bold</span> and the whole paragraph is CENTERED</div>
-		<div class="text-right">This word is in <span class="text-bold">bold</span> and the whole paragraph is RIGHT ALIGNED</div>
+		<div class="row">
+			<div class="col-6 bg-white">
+				<h1>This is H1 Tag</h1>
+				<h2>This is H2 Tag</h2>
+				<h3>This is H3 Tag</h3>
+				<h4>This is H4 Tag</h4>
+				<h5>This is H5 Tag</h5>
+				<h6>This is H6 Tag</h6>
+			</div>
+			<div class="col-6 bg-white">
+				<div class="well">
+					This is my well
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 bg-white">
+				<p>This is a paragraph</p>
+				<div class="text-center">This word is in <span class="text-bold">bold</span> and the whole paragraph is CENTERED</div>
+				<div class="text-right">This word is in <span class="text-bold">bold</span> and the whole paragraph is RIGHT ALIGNED</div>
+			</div>
+		</div>
 	</section>
-
 	<section class="container">
+		<h2 class="text-center caps-up">Dialogs</h2>
+		<div class="row">
+			<div class="col-12 bg-white">
+				<div class="alert alert-info">
+					<span class="close"><i class="fa fa-close"></i></span>
+					<span class="alert-header">INFORMATION</span>
+					<span class="alert-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+				</div>
+				<div class="alert alert-danger">
+					<span class="close"><i class="fa fa-close"></i></span>
+					<span class="alert-header">DANGER</span>
+					<span class="alert-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+				</div>
+				<div class="alert alert-warning">
+					<span class="close"><i class="fa fa-close"></i></span>
+					<span class="alert-header">WARNING</span>
+					<span class="alert-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+				</div>
+				<div class="alert alert-success">
+					<span class="close"><i class="fa fa-close"></i></span>
+					<span class="alert-header">SUCCESS</span>
+					<span class="alert-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container">
+		<div class="row">
+			<div class="col-12">
+
+				<button class="btn btn-default">Default</button>
+				<a href="#" class="btn btn-default">Default</a>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-6 bg-white">
 				<h1 class="caps-up text-center">Button tags</h1>
@@ -75,10 +124,9 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="container">
 		<h1 class="text-center">GRID SYSTEM</h1>
-		<p class="text-center text-bold">Grid system for class col-1</p>
+		<h3 class="text-center text-bold">Grid system for class col-1</h3>
 		<div class="row">
 			<div class="col-1">Column</div>
 			<div class="col-1">Column</div>
@@ -93,7 +141,7 @@
 			<div class="col-1">Column</div>
 			<div class="col-1">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-2</p>
+		<h3 class="text-center text-bold">Grid system for class col-2</h3>
 		<div class="row">
 			<div class="col-2">Column</div>
 			<div class="col-2">Column</div>
@@ -102,98 +150,97 @@
 			<div class="col-2">Column</div>
 			<div class="col-2">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-3</p>
+		<h3 class="text-center text-bold">Grid system for class col-3</h3>
 		<div class="row">
 			<div class="col-3">Column</div>
 			<div class="col-3">Column</div>
 			<div class="col-3">Column</div>
 			<div class="col-3">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-4</p>
+		<h3 class="text-center text-bold">Grid system for class col-4</h3>
 		<div class="row">
 			<div class="col-4">Column</div>
 			<div class="col-4">Column</div>
 			<div class="col-4">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-5</p>
+		<h3 class="text-center text-bold">Grid system for class col-5</h3>
 		<div class="row">
 			<div class="col-5">Column</div>
 			<div class="col-5">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-6</p>
+		<h3 class="text-center text-bold">Grid system for class col-6</h3>
 		<div class="row">
 			<div class="col-6">Column</div>
 			<div class="col-6">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-7</p>
+		<h3 class="text-center text-bold">Grid system for class col-7</h3>
 		<div class="row">
 			<div class="col-7">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-8</p>
+		<h3 class="text-center text-bold">Grid system for class col-8</h3>
 		<div class="row">
 			<div class="col-8">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-9</p>
+		<h3 class="text-center text-bold">Grid system for class col-9</h3>
 		<div class="row">
 			<div class="col-9">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-10</p>
+		<h3 class="text-center text-bold">Grid system for class col-10</h3>
 		<div class="row">
 			<div class="col-10">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-11</p>
+		<h3 class="text-center text-bold">Grid system for class col-11</h3>
 		<div class="row">
 			<div class="col-11">Column</div>
 		</div>
-		<p class="text-center text-bold">Grid system for class col-12</p>
+		<h3 class="text-center text-bold">Grid system for class col-12</h3>
 		<div class="row">
 			<div class="col-12">Column</div>
 		</div>
 	</section>
-
 	<section class="container">
 		<h1 class="text-center">OFFSET</h1>
-		<p class="text-center text-bold">col-offset-1 col-11</p>
+		<h3 class="text-center text-bold">col-offset-1 col-11</h3>
 		<div class="row">
 			<div class="col-offset-1 col-11">COLUMN</div>
 		</div>
-		<p class="text-center text-bold">col-offset-2 col-10</p>
+		<h3 class="text-center text-bold">col-offset-2 col-10</h3>
 		<div class="row">
 			<div class="col-offset-2 col-10">COLUMN</div>
 		</div>
-		<p class="text-center text-bold">col-offset-3 col-9</p>
+		<h3 class="text-center text-bold">col-offset-3 col-9</h3>
 		<div class="row">
 			<div class="col-offset-3 col-9">COLUMN</div>
 		</div>
-		<p class="text-center text-bold">col-offset-4 col-8</p>
+		<h3 class="text-center text-bold">col-offset-4 col-8</h3>
 		<div class="row">
 			<div class="col-offset-4 col-8">COLUMN</div>
 		</div>
-		<p class="text-center text-bold">col-offset-5 col-7</p>
+		<h3 class="text-center text-bold">col-offset-5 col-7</h3>
 		<div class="row">
 			<div class="col-offset-5 col-7">COLUMN</div>
 		</div>
-		<p class="text-center text-bold">col-offset-6 col-6</p>
+		<h3 class="text-center text-bold">col-offset-6 col-6</h3>
 		<div class="row">
 			<div class="col-offset-6 col-6">COLUMN</div>
 		</div>
-		<p class="text-center text-bold">col-offset-7 col-5</p>
+		<h3 class="text-center text-bold">col-offset-7 col-5</h3>
 		<div class="row">
 			<div class="col-offset-7 col-5">COLUMN</div>
 		</div>
-		<p class="text-center text-bold">col-offset-8 col-4</p>
+		<h3 class="text-center text-bold">col-offset-8 col-4</h3>
 		<div class="row">
 			<div class="col-offset-8 col-4">COLUMN</div>
 		</div>
-		<p class="text-center text-bold">col-offset-9 col-3</p>
+		<h3 class="text-center text-bold">col-offset-9 col-3</h3>
 		<div class="row">
 			<div class="col-offset-9 col-3">COLUMN</div>
 		</div>
-		<p class="text-center text-bold">col-offset-10 col-2</p>
+		<h3 class="text-center text-bold">col-offset-10 col-2</h3>
 		<div class="row">
 			<div class="col-offset-10 col-2">COLUMN</div>
 		</div>
-		<p class="text-center text-bold">col-offset-11 col-1</p>
+		<h3 class="text-center text-bold">col-offset-11 col-1</h3>
 		<div class="row">
 			<div class="col-offset-11 col-1">COLUMN</div>
 		</div>
@@ -245,7 +292,7 @@
 			<li class="tab-item" data-content="#sample">SAMPLE</li>
 		</ul>
 		<div class="tab-content active">
-			FUUUUUUUUUUUUUUUUUUUUUUUUUUUCK
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</div>
 		<div class="tab-content"></div>
 		<div class="tab-content"></div>

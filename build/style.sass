@@ -39,10 +39,6 @@ $screenDesktopXL : 1400px // hi-res laptops and desktops
 // Media Query templates - END
 
 // GLOBAL SELECTOR -- START
-*, *:before, *:after 
-	box-sizing: border-box
-	-moz-box-sizing: border-box
-	-webkit-box-sizing: border-box
 // GLOBAL SELECTOR -- END
 
 // CLEARFIX -- START
@@ -144,10 +140,17 @@ $screenDesktopXL : 1400px // hi-res laptops and desktops
 	white-space: nowrap
 	overflow: hidden
 	text-overflow: ellipsis
+
+div.well
+	background-color : #E0E0E0
+	padding : 0.8em
+	border-radius : $borderRadiusDefault
+	border : 1px solid #BDBDBD
 // CLASS SELECTOR -- END
 
 // IMPORT EXTERNAL SASS FILES -- START
 @import imports/tags
+@import imports/dialogs
 @import imports/buttons
 @import imports/grid
 @import imports/tabs
