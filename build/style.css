@@ -65,6 +65,18 @@ table {
   margin-left: 18%;
   margin-right: 18%; }
 
+@media (max-width: 1400px) {
+  .container {
+    margin-left: 10%;
+    margin-right: 10%; } }
+@media (max-width: 1281px) {
+  .container {
+    margin-left: 8%;
+    margin-right: 8%; } }
+@media (max-width: 961px) {
+  .container {
+    margin-left: 2%;
+    margin-right: 2%; } }
 .bg-blue {
   background-color: #0066ff !important;
   color: #FFFFFF; }

@@ -19,6 +19,25 @@ $default_size	: 1em
 $borderRadiusDefault : 0.3em
 // NUMERICAL VALUE -- START
 
+// SCREEN SIZES -- START
+$screenMobile	: 320px  // smartphones, iPhone, portrait 480x320 phones
+$screenTabletS	: 481px  // portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
+$screenTabletM	: 641px  // portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+$screenTabletL	: 961px	 // tablet, landscape iPad, lo-res laptops ands desktops
+$screenDesktopM	: 1025px // big landscape tablets, laptops, and desktops
+$screenDesktopL : 1281px // hi-res laptops and desktops
+$screenDesktopXL : 1400px // hi-res laptops and desktops
+// SCREEN SIZES -- END
+
+// Media Query templates - START
+// @media (max-width: $screenDesktopL)
+// @media (max-width: $screenDesktopM)
+// @media (max-width: $screenTabletL)
+// @media (max-width: $screenTabletM)
+// @media (max-width: $screenTabletS)
+// @media (max-width: $screenMobile)
+// Media Query templates - END
+
 // GLOBAL SELECTOR -- START
 *, *:before, *:after 
 	box-sizing: border-box
@@ -41,9 +60,23 @@ $borderRadiusDefault : 0.3em
 	text-transform : uppercase
 .caps-low
 	text-transform : lowercase
+
 .container
 	margin-left: 18%
 	margin-right : 18%
+
+@media (max-width: $screenDesktopXL)
+	.container
+		margin-left: 10%
+		margin-right : 10%
+@media (max-width: $screenDesktopL)
+	.container
+		margin-left: 8%
+		margin-right : 8%
+@media (max-width: $screenTabletL)
+	.container
+		margin-left: 2%
+		margin-right : 2%
 
 // Background Colors -- START
 .bg-blue 
